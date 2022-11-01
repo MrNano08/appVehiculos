@@ -7,10 +7,6 @@ package gui;
 import javax.swing.JOptionPane;
 import logica.GestorVehiculo;
 
-/**
- *
- * @author mrnano
- */
 public class frmConsultasVehiculo extends javax.swing.JInternalFrame {
 
      GestorVehiculo gestorVehiculo = new GestorVehiculo();

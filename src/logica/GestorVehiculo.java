@@ -20,10 +20,6 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 
-/**
- *
- * @author Iván
- */
 public class GestorVehiculo implements Global, Serializable {
 
     public boolean existe(String matriculaVehi) {

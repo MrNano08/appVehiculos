@@ -9,9 +9,7 @@ public class frmVehiculos extends javax.swing.JInternalFrame {
 
     GestorVehiculo gestorVehiculo;
 
-    /**
-     * Creates new form frmCategorias
-     */
+  
     public frmVehiculos() {
         initComponents();
         gestorVehiculo = new GestorVehiculo();

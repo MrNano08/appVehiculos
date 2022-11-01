@@ -10,10 +10,6 @@ import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRField;
 
-/**
- *
- * @author Usuario
- */
 public class VehiculoDataSource implements JRDataSource {
 
     private ArrayList<Vehiculo> lista = new ArrayList<>();
