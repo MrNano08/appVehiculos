@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="34281cb9-7f88-4634-90d7-889534715bd7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="matricula" class="java.lang.String"/>
+	<field name="marca" class="java.lang.String"/>
+	<field name="modelo" class="java.lang.Integer"/>
+	<field name="capacidad" class="java.lang.Integer"/>
+	<field name="kilometraje" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="a16a855b-10b1-4f85-8c90-131f7a134550" mode="Opaque" x="0" y="0" width="555" height="61"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="0399f7e4-5ff9-4a21-ae6f-903809d3727e" x="-20" y="0" width="594" height="41"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Black" size="24"/>
+				</textElement>
+				<text><![CDATA[LISTA DE VEHICULOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b99a8b3d-87d8-4db4-8ec5-239ee1161365" x="10" y="42" width="212" height="20" forecolor="#0000CC"/>
+				<textElement>
+					<font fontName="Roboto Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Una empresa de XYZ Company]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement uuid="6ee44000-fd31-4078-972d-be92522cc2bd" x="438" y="11" width="117" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1a7cca38-bed0-4048-8045-eaba84c2fae5" x="0" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<text><![CDATA[Matricula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2143b00e-71b5-461c-96ae-6065639f6944" x="111" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<text><![CDATA[Marca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a853f95-4e1c-486f-aed5-72541cdb9394" x="222" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<text><![CDATA[Modelo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2ae4d180-ab07-4278-bbc7-49c9cc0a1e82" x="333" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<text><![CDATA[Capacidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="437af1cf-00d1-43d1-aaa0-9511b377905f" x="444" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<text><![CDATA[Kilometraje]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="82" splitType="Stretch">
+			<textField>
+				<reportElement uuid="fed77ae0-c689-4d04-ab47-5d87513faf55" x="0" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fb55236d-3bba-43e3-85b6-173a7ea9ebab" x="111" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ad5b1a2-325c-4b46-969e-aa0a920beb62" x="222" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b420bf76-4039-4a46-9d77-43019bfb62b8" x="333" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{capacidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1bcccae0-fe5e-4f1f-8abf-986e17ad71b7" x="444" y="0" width="111" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kilometraje}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="85" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement uuid="7aa3798f-86c9-4062-b804-6245c145750a" x="204" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="246aa7d4-d021-49c2-b35f-c8adbf541210" x="284" y="0" width="66" height="20"/>
+				<textElement>
+					<font fontName="Roboto Medium"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="93" splitType="Stretch"/>
+	</summary>
+</jasperReport>
